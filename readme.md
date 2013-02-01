@@ -13,7 +13,7 @@ $ brew install ffmpeg --use-clang (Only works on Mac OS X, but you still need to
 $ brew install casperjs (Only works on Mac OS X, but you still need to install casperjs by your own on other OS)
 
 $ npm install -g grunt-cli
-$ npm install grunt grunt-compass grunt-casperjs grunt-contrib-clean grunt-contrib-clean grunt-shell
+$ npm install grunt grunt-compass grunt-casperjs grunt-contrib-clean grunt-contrib-copy grunt-shell
 ```
 
 ## Build

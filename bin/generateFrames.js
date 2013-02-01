@@ -1,5 +1,8 @@
 var casper = require('casper').create();
 
+/**
+ * Screenshot each frame
+ */
 casper.start('build/site/index.html', function() {
     var prefix = '';
 
