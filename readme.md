@@ -36,3 +36,6 @@ $ npm install grunt grunt-compass grunt-casperjs grunt-contrib-clean grunt-contr
 $ grunt
 ```
 
+## Examples
+
+Inspired by [alessioatzeni.com's loaders](http://www.alessioatzeni.com/wp-content/tutorials/html-css/CSS3-loading-animation-loop/index.html).
