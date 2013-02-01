@@ -1,0 +1,29 @@
+{
+  "name": "html-to-video-generator",
+  "version": "0.1.0",
+  "description": "an html-to-video generator",
+  "main": "grunt.js",
+  "dependencies": {
+    "grunt": "~0.3.17",
+    "grunt-casperjs": "~1.0.2",
+    "grunt-compass": "~0.3.8",
+    "grunt-contrib-clean": "~0.3.1",
+    "grunt-contrib-copy": "~0.3.2",
+    "grunt-shell": "~0.1.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kud/html-to-video-generator.git"
+  },
+  "keywords": [
+    "html",
+    "video",
+    "ffmpeg",
+    "casperjs",
+    "generator"
+  ],
+  "author": "Erwann MEST",
+  "license": "BSD",
+  "readmeFilename": "readme.md"
+}

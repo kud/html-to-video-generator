@@ -422,12 +422,13 @@ li {
 
 %ball-1 {
     background-color: rgba(0,0,0,0);
-    border:$ball-border-size solid rgba(255,255,255,0.9);
+    border:$ball-border-size solid rgba(0,183,229,0.9);
     opacity:.9;
     border-radius:$ball-size;
     width:$ball-size;
     height:$ball-size;
     margin:0 auto;
+    box-shadow: 0 0 35px #2187e7;
 }
 
 // Dynamic
@@ -443,7 +444,9 @@ li {
     margin:0 auto;
     position:relative;
     top: -($ball-size + $ball-border-size * 2);
+    box-shadow: 0 0 15px #2187e7;
 }
+
 
 .loader {
     padding: 10px 0;
