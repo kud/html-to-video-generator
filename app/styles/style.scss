@@ -397,16 +397,18 @@ table {
 
 /////////////////
 @import 'compass';
-$ball-size: 72px;
-$ball-border-size: 10px;
+$ball-size: 150px;
+$ball-border-size: 15px;
 
 li {
     list-style: none;
 }
 
 .loader-container {
-    width: 720px;
-    height: 540px;
+    //width: 720px;
+    //height: 540px;
+    width: 180px;
+    height: 75px;
     margin: 20px auto;
     background: black;
     position: relative;
@@ -414,28 +416,31 @@ li {
 
 .loader {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -($ball-size / 2);
-    margin-top: -($ball-size / 2);
+    //top: 50%;
+    top: 0;
+    //left: 50%;
+    left: 0;
+    //margin-left: -($ball-size / 2);
+    //margin-top: -($ball-size / 2);
 }
 
 %ball-1 {
-    background-color: rgba(0,0,0,0);
-    border:$ball-border-size solid rgba(0,183,229,0.9);
-    opacity:.9;
+    background-color: rgba(0,0,0,1);
+    border:$ball-border-size solid #0b2943;
+    opacity:1;
     border-radius:$ball-size;
     width:$ball-size;
     height:$ball-size;
     margin:0 auto;
-    box-shadow: 0 0 35px #2187e7;
+    @include box-shadow(0 0 5px rgba(0,0,0,.65) inset);
+    //box-shadow: 0 0 35px #2187e7;
 }
 
 // Dynamic
 %ball-2 {
     background-color: rgba(0,0,0,0);
-    border:$ball-border-size solid rgba(30,30,30,0.9);
-    opacity:.9;
+    border:$ball-border-size solid #5babff;
+    opacity:1;
     border-top:$ball-border-size solid rgba(0,0,0,0);
     border-left:$ball-border-size solid rgba(0,0,0,0);
     border-radius:$ball-size;
@@ -444,12 +449,14 @@ li {
     margin:0 auto;
     position:relative;
     top: -($ball-size + $ball-border-size * 2);
-    box-shadow: 0 0 15px #2187e7;
+    //box-shadow: 0 0 15px #2187e7;
 }
 
 
 .loader {
-    padding: 10px 0;
+    //padding: 10px 0;
+    height: 75px;
+    overflow: hidden;
 
     .ball-1 {
         @extend %ball-1;
@@ -673,4 +680,3 @@ li:nth-child(36) {
         @include transform(rotate(350deg));
     }
 }
-
